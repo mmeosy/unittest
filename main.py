@@ -1,4 +1,4 @@
-
+import datetime
 import unittest
 from agecalculation import calculate_age
 
@@ -16,3 +16,6 @@ class testagecalculation(unittest.TestCase)
         birthday = datetime.datetime.strptime("22.05.2000", "%d.%m.%Y")
         result = calculate_age(birthday)
         self.assertEqual(result, 21)
+
+if __name__ == '__main__':
+    unittest.main
